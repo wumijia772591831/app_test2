@@ -12,3 +12,7 @@ class Test:
     def test_03(self):
         allure.attach("这是描述","这是具体描述内容")
         assert True
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    def test_04(self):
+        assert False
